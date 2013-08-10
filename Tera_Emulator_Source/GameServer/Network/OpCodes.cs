@@ -180,7 +180,7 @@ namespace Network
             #region Server packets
             
             // Auth
-            Send.Add(typeof (SpCheckVersion), unchecked((short) 0x4DBD)); //1725 EU
+            Send.Add(typeof (SpCheckVersion), unchecked((short) 0x4DBD)); //1725 EU // Same in 2113 EU
 
             //Characters
             Send.Add(typeof (SpCharacterCheckNameResult), unchecked((short) 0xE315)); //1725 EU
