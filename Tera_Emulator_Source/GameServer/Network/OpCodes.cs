@@ -41,21 +41,30 @@ namespace Network
 
             // Chat
             Recv.Add(unchecked((short) 0xFBE6), typeof (RpChatMessage)); //1725 EU
+            //Recv.Add(unchecked((short) 0x7069), typeof (RpChatMessage)); //2113 EU
             Recv.Add(unchecked((short) 0xE932), typeof (RpChatInfo)); //1725 EU
             Recv.Add(unchecked((short) 0xA8FA), typeof (RpChatPrivate)); //1725 EU
             Recv.Add(unchecked((short) 0xAF9D), typeof (RpChatBlock)); //1603 EU
 
             // Inactive
             Recv.Add(unchecked((short) 0xFA08), typeof (RpMove)); //1725 EU
+            //Recv.Add(unchecked((short) 0x7066), typeof (RpMove)); //2113 EU
             Recv.Add(unchecked((short) 0x837D), typeof (RpInactive)); //1725 EU
+            //Recv.Add(unchecked((short) 0x703D), typeof (RpInactive)); //2113 EU
 
             // Inventory
             Recv.Add(unchecked((short) 0xBD08), typeof (RpGetInventory)); //1725 EU
+            //Recv.Add(unchecked((short) 0x7045), typeof (RpGetInventory)); //2113 EU
             Recv.Add(unchecked((short) 0xA02D), typeof (RpInventoryRemoveItem)); //1725 EU
+            //Recv.Add(unchecked((short) 0x7041), typeof (RpInventoryRemoveItem)); //2113 EU
             Recv.Add(unchecked((short) 0xFEAD), typeof (RpInventoryReplaceItem)); //1725 EU
+            //Recv.Add(unchecked((short)0x706D), typeof(RpInventoryReplaceItem)); //2113 EU
             Recv.Add(unchecked((short) 0x63D8), typeof (RpInventoryDressItem)); //1725 EU
+            //Recv.Add(unchecked((short) 0x7051), typeof (RpInventoryDressItem)); //2113 EU
             Recv.Add(unchecked((short) 0xB77E), typeof (RpInventoryUndressItem)); //1725 EU
+            //Recv.Add(unchecked((short) 0x7055), typeof (RpInventoryUndressItem)); //2113 EU
             Recv.Add(unchecked((short) 0xC4BA), typeof (RpStorageSort)); //1725 EU
+            //Recv.Add(unchecked((short) 0x704D), typeof (RpStorageSort)); //2113 EU
             
             // Dialog
             Recv.Add(unchecked((short) 0xBED7), typeof (RpDialogSelect)); //1725 EU
@@ -66,6 +75,7 @@ namespace Network
             Recv.Add(unchecked((short) 0x99EB), typeof (RpAbortRelog)); //1725 EU
             Recv.Add(unchecked((short) 0xF19F), typeof (RpExit)); //1725 EU
             Recv.Add(unchecked((short) 0x878D), typeof (RpDialogShow)); //1725 EU
+            //Recv.Add(unchecked((short) 0x7049), typeof (RpDialogShow)); //2113 EU
             Recv.Add(unchecked((short) 0x4EE4), typeof (RpItemPickUp)); //1725 EU
 
             // FriendList
